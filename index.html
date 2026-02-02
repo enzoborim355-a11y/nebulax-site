@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NebulaX V2</title>
+  <style>
+    body {
+      background: #0b0f1a;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+    }
+    .box {
+      margin-top: 100px;
+      background: #151b2e;
+      padding: 30px;
+      border-radius: 15px;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #6a5cff;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    input {
+      padding: 8px;
+      width: 90%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>🌌 NebulaX V2</h1>
+    <p>Key System</p>
+    <input id="key" value="NebulaX-Pro-2026" readonly>
+    <br><br>
+    <button onclick="copyKey()">Copy Key</button>
+  </div>
+
+  <script>
+    function copyKey() {
+      let key = document.getElementById("key");
+      key.select();
+      document.execCommand("copy");
+      alert("Key copied!");
+    }
+  </script>
+
+</body>
+</html>
